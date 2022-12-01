@@ -1,0 +1,185 @@
+body {
+    margin: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+        url(https://images.unsplash.com/photo-1637844528612-064026615fcd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position-x: 20%;
+    background-position-y: 90%;
+    z-index: -1;
+
+}
+
+.Logo {
+    color: #fffffc;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+svg.menu {
+    width: 2.3em;
+    margin-top: -0.6em;
+    cursor: pointer;
+}
+
+.hero {
+    color: #fffffc;
+    height: 90vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+}
+
+.h1 {
+    font-size: 1.4rem;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fffffc;
+    height: 100vh;
+    width: 50%;
+    z-index: 99;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+
+}
+
+nav a {
+    color: #0a0908;
+    padding: .75em 2em;
+    display: block;
+}
+
+nav a:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+}
+
+.more-info img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 680px) {
+    body {
+        margin: 1.5em 5em;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 680px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .close {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    ul a {
+        color: #fffffc;
+        padding: .5em 1.5em;
+        font-size: .9rem;
+
+    }
+    
+    ul a:hover {
+        background: none;
+        transform: translatey(-0.3em)
+    }
+    
+    .hero-img {
+        left: unset;
+        right: 0;
+        width: 50%;
+        background-position-x: 40%;
+        height: 45em;
+        margin-bottom: auto;
+
+
+    }
+
+    .Logo {
+        color: #0a0908;
+    }
+
+    .hero {
+    color: #0a0908;
+    height: auto;
+    width: 40%;
+    margin-bottom: 15em;
+    text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 1.5em;
+    }
+
+
+
+
+
+}
